@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AdotaPet</string>
+    <!--<string name="cad_pessoa_fisica">Cadastro do perfil de pessoa física</string>-->
+    <string name="edit_pessoa_fisica">Editar perfil de pessoa física</string>
+    <string name="logradourdo">Logradouro</string>
+    <string name="numero">Número</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="uf">UF</string>
+    <string name="CEP">CEP</string>
+    <string name="complemento">Complemento</string>
+    <string name="usename">Username</string>
+    <string name="senha">Senha</string>
+    <string name="confirmar_senha">Confirmar Senha</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="CPF">CPF</string>
+    <string name="email">E-mail</string>
+    <string name="fone">Fone</string>
+    <string name="avancar">Avançar</string>
+    <string name="esqSenha">Recuperar Senha</string>
+    <string name="recuperarSenha">Você receberá um e-mail para redefinir sua senha</string>
+    <string name="confirmaFiliacao">Filiação realizada com sucesso</string>
+    <string name="title_activity_cadastro_pessoa_fisica">CadastroPessoaFisica</string>
+    <string name="Filiando_se">Filiando-se</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="select_item">Select Item</string>
+    <string name="home">Home</string>
+    <string name="pesquisa">Pesquisar</string>
+    <string name="perfil">Perfil</string>
+    <string name="info">Info</string>
+    <string name="Logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

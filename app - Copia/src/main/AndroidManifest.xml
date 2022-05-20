@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adotapet">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdotaPet">
+        <activity
+            android:name=".ConfirmacaoFiliacao"
+            android:exported="false" />
+        <activity
+            android:name=".Filiandose"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmacaoAtualizacao"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroPessoaFisica"
+            android:exported="false" />
+        <activity
+            android:name=".CadPessoaFisica"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroPessoaFisica1"
+            android:exported="false"
+            android:label="@string/title_activity_cadastro_pessoa_fisica"
+            android:theme="@style/Theme.AdotaPet.NoActionBar" />
+        <activity
+            android:name=".ConfirmarRecuperacaoSenha"
+            android:exported="false" />
+        <activity
+            android:name=".RecuperarSenha"
+            android:exported="false" />
+        <activity
+            android:name=".TelaPrincipalUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmacaoDeCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroPessoaFisica3"
+            android:exported="false" />
+        <activity
+            android:name=".PessoaFisicaJuridica"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
