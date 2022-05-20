@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_24"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/menu_pesquisar"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_24"
+        android:title="@string/pesquisa"/>
+
+    <item
+        android:id="@+id/menu_perfil"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_24"
+        android:title="@string/perfil"/>
+
+    <item
+        android:id="@+id/menu_info"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_24"
+        android:title="@string/info"/>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:enabled="true"
+        android:icon="@drawable/ic_exit_to_app_24"
+        android:title="@string/logout"/>
+
+</menu>
