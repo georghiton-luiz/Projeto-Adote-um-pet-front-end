@@ -13,20 +13,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.adotapet.databinding.ActivityMainBinding;
 import com.example.adotapet.fragments.Passo2Fragments;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText etLogin;
-    EditText etSenha;
-    TextView txtSenhaInvalida;
+    ActivityMainBinding activityMainBinding;
+    public static boolean userVisitante = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(activityMainBinding.getRoot());
     }
 
     public void telaTipoDeCadastro(View v){
@@ -42,28 +43,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnLogar(View v){
+        
+        String login = activityMainBinding.etLogin.getText().toString();
+        String senha = activityMainBinding.etSenha.getText().toString();
 
-        etLogin = findViewById(R.id.et_login);
-        etSenha = findViewById(R.id.et_senha);
-        txtSenhaInvalida = findViewById(R.id.txt_senha_invalida);
-        String login = etLogin.getText().toString();
-        String senha = etSenha.getText().toString();
+        Intent itTelaPrincipalUsuario = new Intent(this, TelaPrincipalUsuario.class);
+        startActivity(itTelaPrincipalUsuario);
 
-        if (login.equals("george") && senha.equals("1234")){
-            Intent itTelaPrincipalUsuario = new Intent(this, TelaPrincipalUsuario.class);
-            startActivity(itTelaPrincipalUsuario);
-        }else{
-            etLogin.setText("");
-            etSenha.setText("");
-            etLogin.requestFocus();
-            AlertDialog.Builder msg = new AlertDialog.Builder(this);
-            msg.setMessage("Username e/ou senha invalidas ou não cadastradas");
-            msg.setNeutralButton("Ok", null);
-            msg.show();
-
-        }
+//        if (login.equals("george") && senha.equals("1234")){
+//            Intent itTelaPrincipalUsuario = new Intent(this, TelaPrincipalUsuario.class);
+//            startActivity(itTelaPrincipalUsuario);
+//        }else{
+//            etLogin.setText("");
+//            etSenha.setText("");
+//            etLogin.requestFocus();
+//            AlertDialog.Builder msg = new AlertDialog.Builder(this);
+//            msg.setMessage("Username e/ou senha invalidas ou não cadastradas");
+//            msg.setNeutralButton("Ok", null);
+//            msg.show();
+//
+//        }
     }
 
-    public void TelaEditar(View v){
+    public void itLoginVisitante(View v){
+
+        userVisitante = true;
+
+        Intent itVisitante = new Intent(this, TelaPrincipalUsuario.class);
+        startActivity(itVisitante);
     }
 }

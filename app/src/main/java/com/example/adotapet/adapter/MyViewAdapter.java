@@ -1,4 +1,4 @@
-package com.example.adotapet;
+package com.example.adotapet.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

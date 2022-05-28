@@ -32,5 +32,15 @@
     <string name="pesquisa">Pesquisar</string>
     <string name="perfil">Perfil</string>
     <string name="info">Info</string>
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="excluir_cadastro">Excluir cadastro</string>
+    <string name="alterar_plano">Alterar plano</string>
+    <string name="ong_s_filiada">ONG\'s filiada</string>
+    <string name="sbre_o_app">Sbre o App</string>
     <string name="logout">Logout</string>
+    <string name="george_luiz">George Luiz</string>
+    <string name="verificado">Verificado</string>
+    <string name="excluir_perfil">Excluir perfil</string>
+    <string name="tem_certeza_excluir_perfil">Tem certeza que deseja excluir seu perfil</string>
+    <string name="cadastro_realizado_com_sucesso">Cadastro realizado com sucesso</string>
 </resources>

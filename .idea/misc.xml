@@ -22,19 +22,31 @@
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/activity_editar_cadastrar_pessoa_fisica.xml" value="0.36666666666666664" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/activity_filiandose.xml" value="0.36666666666666664" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/activity_login.xml" value="0.18" />
-        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/activity_pessoa_fisica_juridica.xml" value="0.22" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/activity_recuperar_senha.xml" value="0.36666666666666664" />
-        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/activity_tela_principal_usuario.xml" value="0.18" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/activity_tela_principal_usuario.xml" value="0.36666666666666664" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/contain_main.xml" value="0.13333333333333333" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fade_in.xml" value="0.1" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_blank.xml" value="0.21145833333333333" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_cad_pessoa_fisica_p1.xml" value="0.13703703703703704" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_cad_pessoa_fisica_p2.xml" value="0.13703703703703704" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_cad_pessoa_fisica_p3.xml" value="0.13703703703703704" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_cadastro_pessoa_fisica.xml" value="0.18802083333333333" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_confirma_atualizacao_cadastro.xml" value="0.36666666666666664" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_confirma_cadastro.xml" value="0.36666666666666664" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_confirma_desfiliar.xml" value="0.1" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_confirmacao_exclusao_perfil_.xml" value="0.23333333333333334" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_desfiliase.xml" value="0.23148148148148148" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_editar_perfil.xml" value="0.25277777777777777" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_excluir.xml" value="0.23333333333333334" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_filiando.xml" value="0.37083333333333335" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_info_ong.xml" value="0.2111111111111111" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_logout.xml" value="0.1" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_minhas_ongs.xml" value="0.67" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_ong.xml" value="0.2574074074074074" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_passo1_fragments.xml" value="0.25" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_passo2.xml" value="0.22870370370370371" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_passo2_fragments.xml" value="0.33" />
@@ -42,8 +54,10 @@
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_perfil.xml" value="0.36666666666666664" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_pesquisa.xml" value="0.25" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/fragment_pesquisar.xml" value="0.35260416666666666" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/layout_nav_header.xml" value="0.2109375" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/layout/list_item.xml" value="0.1" />
         <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.35260416666666666" />
+        <entry key="..\:/PROJETO ANDROID/AdotaPet/app/src/main/res/menu/navigation_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

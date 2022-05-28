@@ -19,12 +19,6 @@
         tools:layout="@layout/fragment_pesquisa" />
 
     <fragment
-        android:id="@+id/menu_perfil"
-        android:name="com.example.adotapet.fragments.PerfilFragment"
-        android:label="fragment_perfil"
-        tools:layout="@layout/fragment_perfil" />
-
-    <fragment
         android:id="@+id/menu_info"
         android:name="com.example.adotapet.fragments.InfoFragment"
         android:label="fragment_info"
@@ -35,5 +29,23 @@
         android:name="com.example.adotapet.fragments.LogoutFragment"
         android:label="fragment_logout"
         tools:layout="@layout/fragment_logout" />
+
+    <fragment
+        android:id="@+id/edit_perfil"
+        android:name="com.example.adotapet.fragments.EditarPerfilFragment"
+        android:label="fragment_editar_perfil"
+        tools:layout="@layout/fragment_editar_perfil" />
+
+    <fragment
+        android:id="@+id/excluir_cadastro"
+        android:name="com.example.adotapet.fragments.ExcluirFragment"
+        android:label="fragment_excluir"
+        tools:layout="@layout/fragment_excluir" />
+
+    <fragment
+        android:id="@+id/ONG_filiada"
+        android:name="com.example.adotapet.fragments.MinhasOngsFragment"
+        android:label="fragment_minhas_ongs"
+        tools:layout="@layout/fragment_minhas_ongs" />
 
 </navigation>

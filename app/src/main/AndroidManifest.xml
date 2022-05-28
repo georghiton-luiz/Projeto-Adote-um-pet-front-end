@@ -13,12 +13,6 @@
             android:name=".ConfirmacaoFiliacao"
             android:exported="false" />
         <activity
-            android:name=".Filiandose"
-            android:exported="false" />
-        <activity
-            android:name=".ConfirmacaoAtualizacao"
-            android:exported="false" />
-        <activity
             android:name=".CadastroPessoaFisica"
             android:exported="false" />
         <activity
@@ -37,9 +31,6 @@
             android:exported="false" />
         <activity
             android:name=".TelaPrincipalUsuario"
-            android:exported="false" />
-        <activity
-            android:name=".ConfirmacaoDeCadastro"
             android:exported="false" />
         <activity
             android:name=".CadastroPessoaFisica3"

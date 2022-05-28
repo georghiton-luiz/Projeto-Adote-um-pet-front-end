@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".fragments.Passo1Fragments">
 
     <LinearLayout
@@ -131,6 +132,15 @@
                 android:paddingRight="10dp"
                 android:textColor="@color/black" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/avancarPasso1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="avançar"
+            android:layout_marginTop="15dp"
+            app:cornerRadius="20dp" />
 
     </LinearLayout>
 </RelativeLayout>

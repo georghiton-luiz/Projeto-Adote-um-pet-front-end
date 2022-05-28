@@ -4,17 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 
+import com.example.adotapet.adapter.MyViewAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class CadPessoaFisica extends AppCompatActivity implements TabLayout.OnTabSelectedListener {
 
-    private TabLayout tabLayout;
-    private ViewPager2 viewPager2;
+    private TabLayout tabLayoutAdd ;
+    private ViewPager2 viewPager2Add;
     private MyViewAdapter myViewAdapter;
 
 
@@ -23,18 +23,18 @@ public class CadPessoaFisica extends AppCompatActivity implements TabLayout.OnTa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar_pessoa_fisica);
 
-        tabLayout = findViewById(R.id.tab_layout_edit);
-        viewPager2 = findViewById(R.id.view_pager);
+        tabLayoutAdd = findViewById(R.id.tab_layout_cad_perfil);
+        viewPager2Add = findViewById(R.id.view_pager);
         FragmentManager manager = getSupportFragmentManager();
         myViewAdapter = new MyViewAdapter(manager, getLifecycle());
-        viewPager2.setAdapter(myViewAdapter);
+        viewPager2Add.setAdapter(myViewAdapter);
 
-        tabLayout.addOnTabSelectedListener(this);
+        tabLayoutAdd.addOnTabSelectedListener(this);
 
-        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+        viewPager2Add.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
-                tabLayout.selectTab(tabLayout.getTabAt(position));
+                tabLayoutAdd.selectTab(tabLayoutAdd.getTabAt(position));
             }
         });
 
@@ -43,7 +43,7 @@ public class CadPessoaFisica extends AppCompatActivity implements TabLayout.OnTa
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
 
-        viewPager2.setCurrentItem(tab.getPosition());
+        viewPager2Add.setCurrentItem(tab.getPosition());
     }
 
     @Override
@@ -57,6 +57,14 @@ public class CadPessoaFisica extends AppCompatActivity implements TabLayout.OnTa
     }
 
     public void voltarCad(View v){
+
+        if (MainActivity.userVisitante){
+            Intent itCadPessoa = new Intent(this, TelaPrincipalUsuario.class);
+            startActivity(itCadPessoa);
+        }else {
+            Intent itLogin = new Intent(this, PessoaFisicaJuridica.class);
+            startActivity(itLogin);
+        }
         this.finish();
     }
 }

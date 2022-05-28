@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,19 +13,19 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.example.adotapet.ConfirmacaoAtualizacao;
-import com.example.adotapet.ConfirmacaoDeCadastro;
 import com.example.adotapet.R;
 
 public class Passo3Fragments extends Fragment {
 
-//    EditText etNomeCompleto;
-//    EditText etCPF;
     EditText etUsername;
     EditText etSenhaEdit;
     EditText etConfimeSenhaEdit;
     String username;
+    TextView tvCadPerfil;
+    TextView tvUpdateCadPerfil;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -42,33 +43,22 @@ public class Passo3Fragments extends Fragment {
             }
         });
 
-//        etNomeCompleto = v.findViewById(R.id.et_nome_completo);
-//        etCPF = v.findViewById(R.id.et_CPF);
         etUsername = v.findViewById(R.id.et_username);
         etSenhaEdit = v.findViewById(R.id.et_senha_edit);
         etConfimeSenhaEdit = v.findViewById(R.id.et_confirme_senha_edit);
+        tvCadPerfil = v.findViewById(R.id.tv_confirmacao_cadastro);
+        tvUpdateCadPerfil = v.findViewById(R.id.tv_confirmacao_atualizacao);
+
 
             Button btnAvancar = v.findViewById(R.id.btn_avancar);
 
             btnAvancar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    username = etUsername.getText().toString();
-                    if (username.equals("")){
-                        AlertDialog.Builder msg = new AlertDialog.Builder(getActivity());
-                        msg.setMessage("Preencha todos os campos obrigatorio");
-                        msg.setNeutralButton("Ok", null);
-                        msg.show();
 
-                    }else {
-
-                    Intent itConfirmacaoCadastro = new Intent(getActivity(), ConfirmacaoDeCadastro.class);
-                    startActivity(itConfirmacaoCadastro);
-                    getActivity().finish();
                 }
-            }
-        });
 
+            });
         return  v;
     }
 }

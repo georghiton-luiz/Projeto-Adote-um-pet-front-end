@@ -1,48 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/confrimacao_de_cadastro_usuario"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ConfirmacaoAtualizacao">
+    tools:context="fragments.ConfirmaCadastroFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingRight="0dp">
-
-            <Button
-                android:id="@+id/ibtn_voltar_confirme_atualizacao"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginLeft="5dp"
-                android:backgroundTint="@color/white"
-                android:foreground="@drawable/ic_baseline_arrow_back_24"
-                android:foregroundTint="@color/login"
-                android:onClick="voltar"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <Space
-                android:layout_width="650dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:id="@+id/img_logo_confirma_atualizacao"
-                android:layout_width="75dp"
-                android:layout_height="50dp"
-                android:layout_weight="0"
-                android:paddingRight="10dp"
-                app:srcCompat="@drawable/logo_461c3a" />
-
-        </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
@@ -59,12 +28,12 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tv_confirmacao_atualizacao"
+                    android:id="@+id/tv_confirmacao_cadastro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="50dp"
                     android:paddingRight="50dp"
-                    android:text="Atualização realizado com sucesso"
+                    android:text="@string/cadastro_realizado_com_sucesso"
                     android:textAlignment="center"
                     android:textColor="@color/login"
                     android:textIsSelectable="false"
@@ -90,16 +59,15 @@
                         android:layout_weight="1" />
 
                     <Button
-                        android:id="@+id/btn_voltar_confirme_atualizacao"
+                        android:id="@+id/btn_concluir_confirme_atualizacao"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/login"
-                        android:onClick="voltar"
                         android:paddingLeft="0dp"
                         android:paddingTop="0dp"
                         android:paddingRight="0dp"
                         android:paddingBottom="0dp"
-                        android:text="VOLTAR"
+                        android:text="CONCLUIR"
                         android:textColor="@color/white"
                         app:cornerRadius="20dp"
                         app:iconPadding="0dp" />
@@ -115,4 +83,5 @@
         </LinearLayout>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

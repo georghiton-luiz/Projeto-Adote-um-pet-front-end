@@ -16,17 +16,29 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.adotapet.R;
+import com.example.adotapet.databinding.FragmentPasso1FragmentsBinding;
 
 
 public class Passo1Fragments extends Fragment {
 
+    private FragmentPasso1FragmentsBinding fragmentPasso1FragmentsBinding;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        fragmentPasso1FragmentsBinding = FragmentPasso1FragmentsBinding.inflate(inflater, container, false);
 
-        View view = inflater.inflate(R.layout.fragment_passo1_fragments, container, false);
-        //return inflater.inflate(R.layout.fragment_passo1_fragments, container, false); //--Antiga chamada de fragmento
-        return view;
+        fragmentPasso1FragmentsBinding.avancarPasso1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Fragment fragment = new Passo2Fragments();
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container_view_tag_edit, fragment).commit();
+
+            }
+        });
+
+        return fragmentPasso1FragmentsBinding.getRoot();
     }
 }
