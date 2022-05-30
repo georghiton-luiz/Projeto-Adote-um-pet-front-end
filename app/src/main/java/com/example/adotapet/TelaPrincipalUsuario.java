@@ -42,7 +42,7 @@ public class TelaPrincipalUsuario extends AppCompatActivity {
         initMenuDeslizante();
     }
 
-    private void initNavigation(){
+    public void initNavigation(){
 
         navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         navController = navHostFragment.getNavController();

@@ -133,14 +133,5 @@
                 android:textColor="@color/black" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/avancarPasso1"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="avançar"
-            android:layout_marginTop="15dp"
-            app:cornerRadius="20dp" />
-
     </LinearLayout>
 </RelativeLayout>
